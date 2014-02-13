@@ -1,3 +1,5 @@
+cookbook_paths:
+- ./site-cookbooks
 recipes:
 
 # base (required by sprout)
@@ -6,77 +8,129 @@ recipes:
 - sprout-osx-base::homebrew
 
 # settings
-- pivotal_workstation::sshd_on
+- pivotal_workstation::bash_completion
 - pivotal_workstation::inputrc
-- sprout-osx-settings::defaults_fast_key_repeat_rate
 - pivotal_workstation::locate_on
+- pivotal_workstation::sshd_on
+- sprout-osx-settings::defaults_fast_key_repeat_rate
+- sprout-osx-settings::dock_preferences
+- sprout-osx-settings::finder_display_full_path
+- sprout-osx-settings::function_keys
 - sprout-osx-settings::global_environment_variables
+- sprout-osx-settings::safari_preferences
+- sprout-osx-settings::set_finder_show_user_home_in_sidebar
+- sprout-osx-settings::terminal_preferences
 
 # development (general)
 - sprout-osx-base::workspace_directory
 - pivotal_workstation::unix_essentials
-- sprout-osx-git::git_projects
+# - sprout-osx-git::git_projects
 - pivotal_workstation::git_config_global_defaults
-- sprout-osx-git::git_scripts
+# - sprout-osx-git::git_scripts
 
 # development (rails)
 - sprout-osx-rbenv
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
-- pivotal_workstation::postgres
+# - pivotal_workstation::postgres
 - sprout-osx-apps::imagemagick
-- sprout-osx-apps::node_js
-- sprout-osx-apps::qt
-
+# - sprout-osx-apps::node_js
+# - sprout-osx-apps::qt
+#
 # apps
-- pivotal_workstation::screen_sharing_app
-- sprout-osx-apps::shiftit
-- pivotal_workstation::mouse_locator
+# - sprout-osx-apps::1password
+# - sprout-osx-apps::chrome
+# - sprout-osx-apps::dropbox
+# - sprout-osx-apps::cyberduck
+# - sprout-osx-apps::evernote
+# - sprout-osx-apps::firefox
+- sprout-osx-apps::csshx
+# - sprout-osx-apps::gitx
+# - sprout-osx-apps::java
+- sprout-osx-apps::sublime_text
+- sprout-osx-apps::officemac2011
+# - pivotal_workstation::screen_sharing_app
+# - sprout-osx-apps::shiftit
+# - pivotal_workstation::mouse_locator
 - sprout-osx-apps::menumeters
-- sprout-osx-apps::ccmenu
+# - sprout-osx-apps::ccmenu
 - pivotal_workstation::github_for_mac
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
-
+# - sprout-osx-apps::iterm2
+# - sprout-osx-apps::keycastr
+#
 # apps (editors)
-- sprout-osx-apps::textmate
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
-
-- sprout-osx-apps::macvim
-- sprout-osx-apps::ctags_exuberant
-
-- sprout-osx-apps::rubymine
-- sprout-osx-rubymine::preferences
-
+# - sprout-osx-apps::textmate
+# - sprout-osx-apps::textmate_bundles
+# - sprout-osx-apps::textmate_preferences
+#
+# - sprout-osx-apps::macvim
+# - sprout-osx-apps::ctags_exuberant
+#
+# - sprout-osx-apps::rubymine
+# - sprout-osx-rubymine::preferences
+#
 - sprout-homebrew
-
+#
 node_attributes:
-  git_pairs_domain: pivotallabs.com
-  git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
-    - initials: lw
-      name: Luke Winikates
-      shortname: lwinikates
-  git_projects:
-    -
-      - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+#  git_pairs_domain: pivotallabs.com
+#  git_pairs_authors:
+#    - initials: ah
+#      name: Abhijit Hiremagalur
+#      shortname: abhi
+#    - initials: bc
+#      name: Brian Cunnie
+#      shortname: cunnie
+#    - initials: jrhb
+#      name: Jonathan Barnes
+#    - initials: lw
+#      name: Luke Winikates
+#      shortname: lwinikates
+#  git_projects:
+#    -
+#      - sprout-wrap
+#      - https://github.com/pivotal-sprout/sprout-wrap.git
   sprout:
     homebrew:
       casks:
+        - adobe-air
+        - adobe-reader
         - bettertouchtool
+        #- caffeine
+        - cord
+        - cyberduck
+        - deathtodsstore
+        - diskaid
         - dropbox
+        - evernote
+        - filezilla
         - firefox
+        - flash
+        - gas-mask
+        - gimp
         - gitx-rowanj
         - google-chrome
+        - iphone-configuration-utility
+        - iterm2
+        - java
+        - kindle
+        - mesasqlite
+        - multibrowser
+        - mysql-workbench
+        - ntfs-free
+        - omnidisksweeper
+        - onepassword
+        - pdfsam
+        - sevenzx
+        - sitesucker
+        - skitch
         - skype
+        - sloth
+        - timemachineeditor
+        - unetbootin
+        - utorrent
         - vagrant
         - virtualbox
+        - vmware-fusion
+        - wireshark
+        - xmarks-safari
+        - xtrafinder

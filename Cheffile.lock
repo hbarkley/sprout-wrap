@@ -12,19 +12,22 @@ GIT
     sprout-homebrew (0.1.0)
       homebrew (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: osx
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/meta
+  specs:
+    meta (0.1.1)
+      pivotal_workstation (>= 0.0.0)
+      sprout-osx-apps (>= 0.0.0)
+      sprout-osx-settings (>= 0.0.0)
+      sprout-pivotal (>= 0.0.0)
+
+PATH
+  remote: site-cookbooks/osx
   specs:
     osx (0.1.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: pivotal_workstation
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/pivotal_workstation
   specs:
     pivotal_workstation (1.0.0)
       dmg (>= 0.0.0)
@@ -35,11 +38,8 @@ GIT
       sprout-osx-settings (>= 0.0.0)
       sprout-pivotal (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-apps
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-osx-apps
   specs:
     sprout-osx-apps (0.1.0)
       dmg (>= 0.0.0)
@@ -47,75 +47,48 @@ GIT
       sprout-osx-base (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-base
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-osx-base
   specs:
     sprout-osx-base (0.1.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-git
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-osx-git
   specs:
     sprout-osx-git (0.1.0)
       homebrew (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-rbenv
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-osx-rbenv
   specs:
     sprout-osx-rbenv (0.1.0)
       homebrew (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-rubymine
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-osx-rubymine
   specs:
     sprout-osx-rubymine (0.1.0)
       homebrew (>= 0.0.0)
       sprout-osx-apps (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-settings
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-osx-settings
   specs:
     sprout-osx-settings (0.1.0)
       homebrew (>= 0.0.0)
       osx (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
 
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-pivotal
-  ref: master
-  sha: 9c9acc69f1a7c84dd652bc39378eae2f3d4409bd
+PATH
+  remote: site-cookbooks/sprout-pivotal
   specs:
     sprout-pivotal (0.1.0)
       dmg (>= 0.0.0)
       homebrew (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
-
-PATH
-  remote: site-cookbooks/meta
-  specs:
-    meta (0.1.1)
-      pivotal_workstation (>= 0.0.0)
-      sprout-osx-apps (>= 0.0.0)
-      sprout-osx-settings (>= 0.0.0)
-      sprout-pivotal (>= 0.0.0)
 
 DEPENDENCIES
   meta (>= 0)
