@@ -101,7 +101,7 @@ node_attributes:
         - deathtodsstore
         - diskaid
         - dropbox
-        - evernote
+        #- evernote
         - filezilla
         - firefox
         - flash
@@ -118,7 +118,7 @@ node_attributes:
         - mysql-workbench
         - ntfs-free
         - omnidisksweeper
-        - onepassword
+        #- onepassword
         - pdfsam
         - sevenzx
         - sitesucker
