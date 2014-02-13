@@ -13,7 +13,7 @@ recipes:
 - pivotal_workstation::locate_on
 - pivotal_workstation::sshd_on
 - sprout-osx-settings::defaults_fast_key_repeat_rate
-- sprout-osx-settings::dock_preferences
+#- sprout-osx-settings::dock_preferences
 - sprout-osx-settings::finder_display_full_path
 - sprout-osx-settings::function_keys
 - sprout-osx-settings::global_environment_variables
