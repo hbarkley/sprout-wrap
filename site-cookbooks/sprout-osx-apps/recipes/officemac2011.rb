@@ -56,21 +56,21 @@ end
 #  package_id ".."
 #end
 
-dmg_package 'Office 2011 14.3.7 Update' do
-  source 'http://download.microsoft.com/download/C/6/3/C634FC8C-A1E0-40B9-9B56-87EA64EFCC5F/Office2011-1437Update_EN-US.dmg'
-  checksum '211025c03c43fa02884519b7245d1ea52bc783f16233bf11510baa8faaf4edeb'
-  volumes_dir 'Microsoft Office 2011 14.3.7 Update'
-  type 'pkg'
-  package_id 'com.microsoft.office.all.core.pkg.14.3.7.update'
-end
+#dmg_package 'Office 2011 14.3.7 Update' do
+#  source 'http://download.microsoft.com/download/C/6/3/C634FC8C-A1E0-40B9-9B56-87EA64EFCC5F/Office2011-1437Update_EN-US.dmg'
+#  checksum '211025c03c43fa02884519b7245d1ea52bc783f16233bf11510baa8faaf4edeb'
+#  volumes_dir 'Microsoft Office 2011 14.3.7 Update'
+#  type 'pkg'
+#  package_id 'com.microsoft.office.all.core.pkg.14.3.7.update'
+//end
 
-dmg_package 'Office 2011 14.3.8 Update' do
-  source 'http://download.microsoft.com/download/D/1/E/D1E7CB92-7D4C-4028-BCAD-82E3E547797D/Office2011-1438Update_EN-US.dmg'
-  checksum '16491be5922a23f3588c567e3a8cceaf13b279358defae8b22923e5edd6f9077'
-  volumes_dir 'Microsoft Office 2011 14.3.8 Update'
-  type 'pkg'
-  package_id 'com.microsoft.office.all.core.pkg.14.3.8.update'
-end
+#dmg_package 'Office 2011 14.3.8 Update' do
+#  source 'http://download.microsoft.com/download/D/1/E/D1E7CB92-7D4C-4028-BCAD-82E3E547797D/Office2011-1438Update_EN-US.dmg'
+#  checksum '16491be5922a23f3588c567e3a8cceaf13b279358defae8b22923e5edd6f9077'
+#  volumes_dir 'Microsoft Office 2011 14.3.8 Update'
+#  type 'pkg'
+#  package_id 'com.microsoft.office.all.core.pkg.14.3.8.update'
+//end
 
 dmg_package 'Office 2011 14.3.9 Update' do
   source 'http://download.microsoft.com/download/E/C/6/EC6221F3-463C-46FF-8365-8784A67D7872/Office2011-1439Update_EN-US.dmg'
